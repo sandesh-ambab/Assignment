@@ -48,6 +48,37 @@ a:hover {
 
 }
 
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+    left: 469px;
+    top: 111px;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content li {
+    display: block;
+    text-decoration: none;
+    padding: 12px 14px;
+    color: black;
+}
+
+.dropdown-content li:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
 section {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -81,7 +112,7 @@ h6 {
 hgroup {
     height:343px;
     background-color: chartreuse;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     font-size: 30px;
@@ -127,3 +158,41 @@ h3 {
 .a1 {
    color: blue; 
 }
+
+.btn{	
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+button {
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 5px;
+	width: 56px;
+}
+
+p {
+	justify-content: center;
+	/*display: flex;*/
+    font-size: 30px;
+    margin-top: 25px;
+
+}
+
+input {
+	
+	font-style: italic;
+	font-size: 17px;
+	border-radius: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
